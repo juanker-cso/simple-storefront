@@ -1,0 +1,183 @@
+body {
+    background: #385170;
+    margin-top: 0;
+}
+
+input,select,textarea {
+    margin-bottom: 1ex;
+}
+
+img.svgBlanco {
+    filter: invert(100%) sepia(33%) saturate(744%) hue-rotate(306deg) brightness(94%) contrast(113%);
+}
+
+img.svgBtn {
+    filter: invert(31%) sepia(27%) saturate(687%) hue-rotate(173deg) brightness(90%) contrast(97%);
+}
+
+img.svgSutil {
+    filter: invert(27%) sepia(52%) saturate(437%) hue-rotate(173deg) brightness(95%) contrast(89%);
+}
+
+img.id_cartilla {
+    max-width: 100%;
+    width: 30%;
+}
+
+#lista {
+    width: 100%;
+    margin-top: 5px
+}
+
+.barraTitulo {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: #9fd3c7;
+    background-color: #142d4c;
+    padding: 10px 15px;
+}
+
+.tabla {
+    display: table;
+    width: 100%;
+    background-color: #ececec;
+    border-radius: 15px;
+}
+.fila {
+    display: table-row;
+    /* width: 100%; */
+}
+.celda {
+    display: table-cell;
+    padding: 3px 10px;
+    word-wrap: break-word;
+    border-radius: inherit;
+}
+.header {
+    color: #ececec;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #142d4c;
+}
+.cid,.crol,.cver,.cedit {
+    width: fit-content;
+}
+.celim{
+    text-align: center;
+    width: 4ch;
+}
+.cver,.cedit {
+    text-align: center;
+}
+.ccod {
+    max-width: 32ch;
+}
+
+.cuadroMens{
+    color: crimson;
+    background-color: #cecece;
+    display: none;
+    padding: 0px 6px;
+    border-radius: 6px;
+    margin-bottom: 1.5ex;
+    width: fit-content;
+    position:absolute;
+}
+.mensForma {
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.cuadro_empleado {
+    width: 100%;
+    padding: 50px 15%;
+}
+
+.ver_empleado {
+    text-align: center;
+    width: 70%;
+    background-color: #ececec;
+    padding-bottom: 1ex;
+    border-radius: 15px;
+    margin-bottom: 2ex;
+}
+
+.btn {
+  appearance: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #9fd3c7;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #385170;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.btn:hover {
+  background-color: #F3F4F6;
+  text-decoration: none;
+  transition-duration: 0.1s;
+}
+
+.delbtn {
+    background-color: #c71010;
+    color: #fef4e7;
+    padding: 2px 5px 0px;
+}
+.delbtn:hover{
+    background-color: #c98989;
+}
+
+.querybtn {
+    padding: 2px 5px 0px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 2ex;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9fd3c7; /* Change the background color as desired */
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar li a {
+    display: block;
+    color: #142d4c; /* Change the text color as desired */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Change the color of the links when hovered */
+.navbar li a:hover {
+    color: #142d4c;
+    background-color: #cecece;
+    font-weight: 900;
+}

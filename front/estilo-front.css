@@ -1,0 +1,345 @@
+/* elementos html */
+html {
+    font-family: 'open sans', 'Fira sans', 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+body {
+    background-color: #6C757D;
+    margin: 0 15vw;
+}
+
+header {
+    background-color: #343A40;
+    margin-bottom: 0;
+}
+
+h1 {
+    color: #03afff;
+}
+
+input,select,textarea {
+    margin-bottom: 1.5ex;
+}
+
+/* ids */
+#formaContacto {
+    padding: 2vh 2vw;
+    color: #F8F9FA;
+}
+
+input,select,textarea {
+    margin-bottom: 1.5ex;
+}
+
+/* barra de navegación */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 2ex;
+    padding: 0;
+    overflow: hidden;
+    background-color: #343A40; /* Change the background color as desired */
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar li a {
+    display: block;
+    color: #03afff; 
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 100%;
+}
+
+.navbar li a:hover {
+    background: rgb(248,249,250);
+    background: linear-gradient(0deg, rgba(248,249,250,1) 0%, rgba(52,58,64,1) 90%);
+    font-weight: 600;
+}
+
+.navbar li a img {
+    max-width: 100%;
+    min-width: 3ch;
+    width: 3vw;
+}
+
+
+/* classes de cuerpo */
+.bannerbox {
+    display: block;
+    margin: 1em 0;
+    padding: 1em 10vw;
+    /* border: 15px double #FFC107; */
+    border-radius: 4px;
+    background-color: #343A40;
+}
+
+.cards, .cards4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 1rem;
+}
+
+.cards4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.card {
+    border: 2px outset #F8F9FA;
+    border-radius: 4px;
+    background-color: #343A40;
+    margin: 1rem;
+}
+.cards a {
+    border-width: 4px;
+    text-decoration: none;
+}
+.card:hover{
+    transform: scale(1.11);
+}
+.cards a:hover{
+    border-color: #FFC107;
+    border-width: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.uppercard {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: inherit;
+    border-bottom: 5px groove #03afff;
+    line-height: 0;
+}
+
+.lowercard {
+    margin: .5rem;
+    color: #6C757D;
+}
+.lowercard h3 {
+    color: #03afff;
+    padding: 0 1rem;
+    font-weight: bold;
+    display: flex;
+}
+
+.precio {
+    color: #343A40;
+    background-color: #FFC107;
+    font-size: larger;
+    font-weight: bold;
+    float: left;
+    display: block;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.comprar {
+    position: relative;
+}
+.comprar img{
+    position: absolute;
+    padding: 1rem;
+    width: inherit;
+    transform: scale(0);
+    display: flex;
+    opacity: 0.7;
+}
+a.card:hover .comprar img{
+    transform: scale(1);
+}
+
+.productoCard {
+    width: auto;
+    display: flex;
+    background-color: #343A40;
+    padding: 1rem 1rem;
+    border-radius: 6px;
+    align-items: center;
+    overflow: hidden;
+}
+.productoLeft {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.productoRight {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0 2rem;
+    color: #F8F9FA;
+    width: 100%;
+}
+
+
+.carritoCard {
+    background-color: #343A40;
+    padding: 1rem 1rem;
+    border-radius: 6px;
+    color: #F8F9FA;
+    padding: 1rem 3rem;
+    display: flex;
+    overflow: hidden;
+}
+.carritoLeft{
+    width: 100%;
+    margin-left: 1rem;
+    display: block;
+}
+.carritoRight{
+    width: inherit;
+    margin: 2rem;
+}
+
+
+/* piezas de pie */
+.footbar {
+    background-color: #343A40; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    margin-top: 2ex;
+}
+.footbar a {
+    color: #FFC107; 
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+}
+.footbar a:hover {
+    text-decoration: underline;
+    filter: brightness(120%);
+}
+.footbar .terms {
+    color: #E0E0E0; 
+}
+
+
+/* objetos de inserción */
+.smallicon {
+    width: 2.4em;
+    display: block;
+}
+
+.smallicon:hover {
+    transform: scale(1.1);
+}
+
+.yellowicon {
+    filter: invert(79%) sepia(77%) saturate(2233%) hue-rotate(353deg) brightness(100%) contrast(102%);
+}
+
+.blueicon {
+    filter: invert(51%) sepia(83%) saturate(2182%) hue-rotate(168deg) brightness(100%) contrast(102%);
+    /* filter: invert(38%) sepia(38%) saturate(7498%) hue-rotate(199deg) brightness(101%) contrast(107%); */
+}
+
+.banner {
+    width: 100%;
+}
+
+.btn_secundario {
+    background-color: #6C757D;
+    color: #F8F9FA;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 16px;
+}
+
+.btn_secundario:hover {
+    background-color: #28A745;
+    transition-duration: 0.1s;
+}
+
+.btn_secundario:disabled {
+    background-color: #343A40;
+    color: #6C757D;
+}
+
+.grow-wrap {
+    /* easy way to plop the elements on top of each other and have them both sized based on the tallest one's height */
+    display: grid;
+  }
+.grow-wrap::after {
+    /* Note the weird space! Needed to preventy jumpy behavior */
+    content: attr(data-replicated-value) " ";
+    /* This is how textarea text behaves */
+    white-space: pre-wrap;
+    /* Hidden from view, clicks, and screen readers */
+    visibility: hidden;
+}
+.grow-wrap > textarea {
+    /* You could leave this, but after a user resizes, then it ruins the auto sizing */
+    resize: none;
+    /* Firefox shows scrollbar on growth, you can hide like this. */
+    overflow: hidden;
+}
+.grow-wrap > textarea,
+.grow-wrap::after {
+    /* Identical styling required!! */
+    border: 1px solid black;
+    padding: 0.5rem;
+    font: inherit;
+    /* Place on top of each other */
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.mensaje {
+    visibility: hidden;
+    display: inline-block;
+    color: #FFC107;
+    background-color: #343A40;
+    margin: 0 1rem;
+    line-height: 0;
+}
+
+
+.tabla {
+    display: table;
+    width: 100%;
+    background-color: #6C757D;
+    border-radius: 15px;
+}
+.fila {
+    display: table-row;
+    /* width: 100%; */
+}
+.celda {
+    display: table-cell;
+    padding: 3px 10px;
+    word-wrap: break-word;
+    border-radius: inherit;
+    vertical-align: middle;
+}
+.img-prod {
+    float: left;
+    width: 10rem;
+    margin: 0;
+    padding-top: 0.5rem;
+}
+.img-prod img{
+    width: inherit;
+}
+.nombre {
+    color: #03afff;
+    font-weight: bold;
+    text-shadow: 0 1px 2px #343A40;
+}
+.costo {
+    color: #FFC107;
+    text-shadow: 0 1px 2px #343A40;
+}
