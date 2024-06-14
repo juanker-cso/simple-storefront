@@ -14,5 +14,5 @@ wordwrap($mensaje, 70, "\r\n");
 //     'Telefono'  => "{$telefono}"
 // ];
 
-return mail('juan.solmos@alumnos.udg.mx','Contacto roboC',$mensaje);
+return mail('...','Contacto roboC',$mensaje);
 ?>
